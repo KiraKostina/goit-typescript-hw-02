@@ -1,13 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-
-interface Image {
-  id: string;
-  description: string;
-  url: {
-    small: string;
-    regular: string;
-  };
-}
+import { Image } from './types';
 
 interface ApiResponse {
   results: Image[];

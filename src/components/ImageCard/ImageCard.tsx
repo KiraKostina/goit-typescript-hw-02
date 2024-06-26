@@ -1,6 +1,18 @@
 import css from './ImageCard.module.css';
 
-export default function ImageCard({ small, regular, description, onClick }) {
+interface ImageCardProps {
+  small: string;
+  regular: string;
+  description: string;
+  onClick: (regular: string) => void;
+}
+
+export default function ImageCard({
+  small,
+  regular,
+  description,
+  onClick,
+}: ImageCardProps) {
   const handleClick = () => {
     onClick(regular);
   };
