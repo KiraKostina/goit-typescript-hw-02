@@ -1,7 +1,7 @@
 export interface Image {
   id: string;
   description: string;
-  url: {
+  urls: {
     small: string;
     regular: string;
   };

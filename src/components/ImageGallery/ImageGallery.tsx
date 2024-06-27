@@ -12,7 +12,7 @@ export interface ImageFromGallery {
 
 interface ImageGalleryProps {
   images: ImageFromGallery[];
-  onImageClick: () => void;
+  onImageClick: (small: string) => void;
 }
 
 export default function ImageGallery({
