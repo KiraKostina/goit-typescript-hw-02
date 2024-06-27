@@ -6,14 +6,11 @@ export default function Loader() {
     <div className={css.loader_wrapper}>
       <RotatingLines
         visible={true}
-        height="96"
         width="96"
-        color="grey"
+        strokeColor="grey"
         strokeWidth="5"
         animationDuration="1"
         ariaLabel="rotating-lines-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
       />
     </div>
   );

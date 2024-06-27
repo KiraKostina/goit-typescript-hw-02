@@ -42,7 +42,7 @@ export default function App() {
     fetchImages();
   }, [page, searchQuery]);
 
-  const handleSearch = async searchWord => {
+  const handleSearch = async (searchWord: string) => {
     setSearchQuery(searchWord);
     setPage(1);
     setImages([]);
@@ -52,7 +52,7 @@ export default function App() {
     setPage(page + 1);
   };
 
-  function openModal(small) {
+  function openModal(small: string) {
     setChosenImage(small);
     setModalIsOpen(true);
   }
