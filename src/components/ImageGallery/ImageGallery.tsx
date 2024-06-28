@@ -1,17 +1,9 @@
+import { Image } from '../../types';
 import ImageCard from '../ImageCard/ImageCard';
 import css from './ImageGallery.module.css';
 
-export interface ImageFromGallery {
-  id: string;
-  description: string;
-  urls: {
-    small: string;
-    regular: string;
-  };
-}
-
 interface ImageGalleryProps {
-  images: ImageFromGallery[];
+  images: Image[];
   onImageClick: (small: string) => void;
 }
 
